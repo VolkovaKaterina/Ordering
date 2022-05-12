@@ -7,7 +7,7 @@ import uniqid from 'uniqid';
 import { useNavigate } from 'react-router-dom';
 import { addModifiers, createOrder } from '../actions';
 
-function ProductsItem({ item, type, setNoOrder }) {
+const ProductsItem = ({ item, type, setNoOrder }) => {
   const dispatch = useDispatch();
   const key = uniqid();
   const keyModifiers = uniqid();
@@ -58,5 +58,5 @@ function ProductsItem({ item, type, setNoOrder }) {
       </Card>
     </Grid>
   );
-}
+};
 export default ProductsItem;

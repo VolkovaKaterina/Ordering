@@ -41,6 +41,13 @@
       "price": 20,
       "picture": "https://source.unsplash.com/FZTwpjRUr38",
       "id": 6
+    },
+    {
+      "name": "burger",
+      "type": "products",
+      "price": 22,
+      "picture": "https://source.unsplash.com/dXeBXaThv4U",
+      "id": 7
     }
   ],
   "modifiers": [
@@ -111,26 +118,5 @@
       "price": 23
     }
   ],
-  "orders": [
-    [
-      {
-        "id": 2,
-        "name": "Big Burger",
-        "price": 30,
-        "type": "products",
-        "picture": "https://source.unsplash.com/vOdK_eih7B0",
-        "key": "l2i9n1sl"
-      }
-    ],
-    [
-      {
-        "id": 2,
-        "name": "Big Burger",
-        "price": 30,
-        "type": "products",
-        "picture": "https://source.unsplash.com/vOdK_eih7B0",
-        "key": "l2i9n8eq"
-      }
-    ]
-  ]
+  "orders": []
 }

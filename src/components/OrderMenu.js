@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 import ProductsItem from './ProductsItem';
 
-function OrderMenu() {
+const OrderMenu = () => {
   const navigate = useNavigate();
 
   return (
@@ -21,5 +21,5 @@ function OrderMenu() {
       </Routes>
     </Box>
   );
-}
+};
 export default OrderMenu;

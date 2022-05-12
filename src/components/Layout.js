@@ -90,7 +90,7 @@ const ImageMarked = styled('span')(({ theme }) => ({
 
 const theme = createTheme();
 
-function Layout() {
+const Layout = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
 
@@ -176,5 +176,5 @@ function Layout() {
       </div>
     </ThemeProvider>
   );
-}
+};
 export default Layout;

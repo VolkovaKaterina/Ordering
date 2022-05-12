@@ -8,9 +8,9 @@ import { useDispatch } from 'react-redux';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { deleteModifiers, deleteProduct, selectedProduct } from '../actions';
 
-function OrderItem({
+const OrderItem = ({
   item, name, price, type, setBurgerOrder,
-}) {
+}) => {
   const dispatch = useDispatch();
 
   const deleteFromOrder = (value) => (value === 'modifiers' ? dispatch(deleteModifiers(item)) : dispatch(deleteProduct(item)));
@@ -59,6 +59,6 @@ function OrderItem({
       </Box>
     </Box>
   );
-}
+};
 
 export default OrderItem;

@@ -21,7 +21,7 @@ const style = {
   p: 4,
 };
 
-function Order() {
+const Order = () => {
   const getOrderSum = (order) => {
     let sum = 0;
     order.forEach((item) => {
@@ -150,6 +150,6 @@ function Order() {
 
     </Container>
   );
-}
+};
 
 export default Order;

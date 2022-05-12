@@ -9,7 +9,7 @@ import {
 } from '../actions';
 import { getItem } from '../api/apiRequests';
 
-function Create({ type }) {
+const Create = ({ type }) => {
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
   const [picture, setPicture] = useState('');
@@ -137,6 +137,6 @@ function Create({ type }) {
       </Box>
     </Container>
   );
-}
+};
 
 export default Create;

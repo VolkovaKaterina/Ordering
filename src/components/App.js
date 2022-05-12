@@ -7,7 +7,7 @@ import Layout from './Layout';
 import Order from './Order';
 import Create from './Create';
 
-function App() {
+const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchProducts());
@@ -30,6 +30,6 @@ function App() {
 
     </div>
   );
-}
+};
 
 export default App;

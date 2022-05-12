@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux';
 import ProductsItem from './ProductsItem';
 import usePagination from './Pagination';
 
-function ProductsList({ setNoBurgerOrder, burgerNoOrder, setNoOrder }) {
+const ProductsList = ({ setNoBurgerOrder, burgerNoOrder, setNoOrder }) => {
   const KEYS = {
     products: useSelector((state) => state.products),
     modifiers: useSelector((state) => state.modifiers),
@@ -18,7 +18,7 @@ function ProductsList({ setNoBurgerOrder, burgerNoOrder, setNoOrder }) {
   const [value, setValue] = useState('products');
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
-  const PER_PAGE = 9;
+  const PER_PAGE = 4;
   const count = Math.ceil(data.length / PER_PAGE);
   const PAGINATOR = usePagination(data, PER_PAGE);
 
@@ -98,6 +98,6 @@ function ProductsList({ setNoBurgerOrder, burgerNoOrder, setNoOrder }) {
 
     </>
   );
-}
+};
 
 export default ProductsList;

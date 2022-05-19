@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import ButtonBase from '@mui/material/ButtonBase';
 import {
   Box,
@@ -91,7 +91,6 @@ const ImageMarked = styled('span')(({ theme }) => ({
 const theme = createTheme();
 
 const Layout = () => {
-  const { pathname } = useLocation();
   const navigate = useNavigate();
 
   const classes = useStyles();
@@ -138,7 +137,6 @@ const Layout = () => {
                 <ImageButton
                   focusRipple
                   key={item.text}
-                  selected={pathname === item.path}
                   className={classes.active}
                   disabled={item.disabled}
                   onClick={() => navigate(item.path)}

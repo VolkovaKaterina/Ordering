@@ -28,9 +28,14 @@ const Create = ({ type }) => {
         setPrice(data.price);
         setItemId(data.id);
       })();
+    } else {
+      setName('');
+      setPicture('');
+      setPrice('');
+      setItemId('');
     }
   }, [id]);
-
+  console.log(type);
   const onFormSubmit = (e) => {
     e.preventDefault();
     const newItem = {

@@ -18,7 +18,7 @@ const ProductsList = ({ setNoBurgerOrder, burgerNoOrder, setNoOrder }) => {
   const [value, setValue] = useState('products');
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
-  const PER_PAGE = 4;
+  const PER_PAGE = 9;
   const count = Math.ceil(data.length / PER_PAGE);
   const PAGINATOR = usePagination(data, PER_PAGE);
 

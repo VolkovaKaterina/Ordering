@@ -1,0 +1,122 @@
+{
+  "products": [
+    {
+      "name": "Burger",
+      "type": "products",
+      "price": 12,
+      "picture": "https://source.unsplash.com/9G_oJBKwi1c",
+      "id": 1
+    },
+    {
+      "name": "Big Burger",
+      "type": "products",
+      "price": 35,
+      "picture": "https://source.unsplash.com/dXeBXaThv4U",
+      "id": 2
+    },
+    {
+      "name": "Super Burger",
+      "type": "products",
+      "price": "12",
+      "picture": "https://source.unsplash.com/TD-ZLyLNRFI",
+      "id": 3
+    },
+    {
+      "name": "Bun",
+      "type": "products",
+      "price": 12,
+      "picture": "https://source.unsplash.com/XNxWqWAk8gU",
+      "id": 4
+    },
+    {
+      "name": "sandwich",
+      "type": "products",
+      "price": 10,
+      "picture": "https://source.unsplash.com/a_iKAg00LN4",
+      "id": 5
+    },
+    {
+      "name": "Pizza",
+      "type": "products",
+      "price": 20,
+      "picture": "https://source.unsplash.com/FZTwpjRUr38",
+      "id": 6
+    },
+    {
+      "name": "burger",
+      "type": "products",
+      "price": 22,
+      "picture": "https://source.unsplash.com/dXeBXaThv4U",
+      "id": 7
+    }
+  ],
+  "modifiers": [
+    {
+      "name": "Tomato",
+      "type": "modifiers",
+      "price": 3,
+      "picture": "https://source.unsplash.com/FzB_512zvP0",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Cheese",
+      "price": 3,
+      "type": "modifiers",
+      "picture": "https://source.unsplash.com/rfI4MmZXZOk"
+    },
+    {
+      "name": "ketchup",
+      "type": "modifiers",
+      "price": 4,
+      "picture": "https://source.unsplash.com/QcUJLRMDryQ",
+      "id": 3
+    },
+    {
+      "name": "mayonnaise",
+      "type": "modifiers",
+      "price": 5,
+      "picture": "https://source.unsplash.com/R1exaWKXBzY",
+      "id": 4
+    },
+    {
+      "name": "potato",
+      "type": "modifiers",
+      "price": 10,
+      "picture": "https://source.unsplash.com/qgZRZI-pKgM",
+      "id": 5
+    },
+    {
+      "name": "Cucumber",
+      "type": "modifiers",
+      "price": 5,
+      "picture": "https://source.unsplash.com/OnAwTs0tu3k",
+      "id": 6
+    }
+  ],
+  "bundles": [
+    {
+      "id": 1,
+      "name": "Combo with two burgers",
+      "productIds": [
+        1,
+        2
+      ],
+      "modifierIds": [],
+      "price": 40
+    },
+    {
+      "id": 1,
+      "name": "Supper burger",
+      "productIds": [
+        1
+      ],
+      "modifierIds": [
+        1,
+        2
+      ],
+      "price": 23
+    }
+  ],
+  "orders": []
+}
